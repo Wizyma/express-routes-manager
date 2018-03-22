@@ -2,8 +2,7 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/Wizyma/express-routes-manager.svg)](https://greenkeeper.io/)
 
 ## What is it ?
-This will help to create express routes and keep it organized. <br />
-
+This will help to create express routes and keep it organized. 
 
 ### Motivation 
 I love to to keep my code splitted, and this is a nice way to manage it and to not get lost <br />
@@ -86,3 +85,4 @@ In another file to boot the server
 
 * ⇄ Pull requests and ★ Stars are always welcome.
 * For bugs and feature requests, please create an issue.
+
