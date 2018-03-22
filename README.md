@@ -1,2 +1,1 @@
 [![Build Status](https://travis-ci.org/Wizyma/express-routes-manager.svg?branch=master)](https://travis-ci.org/jsparanoguy/express-routes-manager)
-[![Greenkeeper badge](https://badges.greenkeeper.io/jsparanoguy/express-routes-manager.svg.svg)](https://greenkeeper.io/)
