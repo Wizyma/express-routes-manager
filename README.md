@@ -15,7 +15,7 @@ npm install express-routes-manager-v1
 ```
 
 
-you have an a class with some routes : <br />
+lets imagine you have a class with some routes : <br />
 ```javascript
 import BaseConstroller from 'express-routes-manager-v1'
 
