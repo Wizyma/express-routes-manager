@@ -1,18 +1,27 @@
 {
     "compilerOptions": {
-      "target": "es6",
-      "module": "commonjs",
-      "outDir": "dist",
-      "sourceMap": true
+      "module": "commonjs", 
+      "target": "es5",
+      "outDir": "./dist",
+      "noImplicitAny": true, 
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "emitDecoratorMetadata": true, 
+      "experimentalDecorators": true,
+      "allowSyntheticDefaultImports": true,
+      "baseUrl": "**/*",
+      "paths": {
+        "*": [
+          "node_modules/*"
+        ]
+      },
+      "lib": [
+        "es2017",
+        "dom",
+        "esnext.asynciterable"
+    ]
     },
-    "files": [
-      "./node_modules/@types/mocha/index.d.ts",
-      "./node_modules/@types/node/index.d.ts"
-    ],
     "include": [
       "**/*.ts",
-    ],
-    "exclude": [
-      "node_modules"
     ]
 }
