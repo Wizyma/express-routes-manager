@@ -13,72 +13,72 @@ while making all the routes and to keep it **clean** !
 you have an a class with some routes : <br />
 ```javascript
 export class MainRoutes extends BaseController {
-        constructor(){
-            super()
-        }
-    
-        static routes: Route[] = [
-            {path: '/', action: 'index', verb: 'get'},
-            {path: '/user', action: 'getUser', verb: 'get'},
-            {path: '/delete', action: 'deleteUsers', verb: 'delete'},
-            {path: '/update', action: 'updateUsers', verb: 'patch'},
-            {path: '/comment', action: 'commentUser', verb: 'post'},
-        ]
-    
-        private index = (req: Request, res: Response) => {
-            // do something
-        }
-    
-        private getUser = (req: Request, res: Response) => {
-            // do something
-        }
-    
-        private deleteUsers = (req: Request, res: Response) => {
-            // do something
-        }
-    
-        private updateUsers = (req: Request, res: Response) => {
-            // do something
-        }
-    
-        private commentUser = (req: Request, res: Response) => {
-            // do something
-        }    
+    constructor(){
+        super()
+    }
+
+    static routes: Route[] = [
+        {path: '/', action: 'index', verb: 'get'},
+        {path: '/user', action: 'getUser', verb: 'get'},
+        {path: '/delete', action: 'deleteUsers', verb: 'delete'},
+        {path: '/update', action: 'updateUsers', verb: 'patch'},
+        {path: '/comment', action: 'commentUser', verb: 'post'},
+    ]
+
+    private index = (req: Request, res: Response) => {
+        // do something
+    }
+
+    private getUser = (req: Request, res: Response) => {
+        // do something
+    }
+
+    private deleteUsers = (req: Request, res: Response) => {
+        // do something
+    }
+
+    private updateUsers = (req: Request, res: Response) => {
+        // do something
+    }
+
+    private commentUser = (req: Request, res: Response) => {
+        // do something
+    }    
 }
 ```
 
 Somewhere else in your code where you manage your server config :
 ```javascript
-	import { MainRoutes } from "../your/path"
-        import { SomeOtherRoutes } from "../your/path"
-        import { Router } from 'express'
+import { MainRoutes } from "../your/path"
+import { SomeOtherRoutes } from "../your/path"
+import { Router } from 'express'
 
-        const router = Router()
-        
-        const mains = new MainRoutes() 
-        const connectedRoutes = MainRoutes.connect(router, mains);
-        
-        const others = new SomeOtherRoutes() 
-        const connecteOthersRoutes = SomeOtherRoutes.connect(router, others);
-        
-        export {
-        	connecteOthersRoutes,
-                connectedRoutes
-        }
+const router = Router()
+
+const mains = new MainRoutes() 
+const connectedRoutes = MainRoutes.connect(router, mains);
+
+const others = new SomeOtherRoutes() 
+const connecteOthersRoutes = SomeOtherRoutes.connect(router, others);
+
+export {
+    connecteOthersRoutes,
+        connectedRoutes
+}
 ```
 
 In another file to boot the server
 ```javascript        
-        import * as express from 'express'
-        import * as myRoutes from '../path/to/your/routes/'
-        
-        const app = express()
-        
-        app.use(myRoutes)
-        
-        app.listen(4000, () => {
-        	console.log('> Server listening to port ' + 4000)
-        })
+import * as express from 'express'
+import * as myRoutes from '../path/to/your/routes/'
+
+const app = express()
+
+app.use(myRoutes)
+
+app.listen(4000, () => {
+    console.log('> Server listening to port ' + 4000)
+})
 ```
 
 ### CONTRIBUTING
