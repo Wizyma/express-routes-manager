@@ -9,9 +9,16 @@ I love to to keep my code splitted, and this is a nice way to manage it and to n
 while making all the routes and to keep it **clean** !
 
 ### How to use ?
+Install the package <br/>
+```sh
+npm install express-routes-manager-v1
+```
 
-you have an a class with some routes : <br />
+
+lets imagine you have a class with some routes : <br />
 ```javascript
+import BaseConstroller from 'express-routes-manager-v1'
+
 export class MainRoutes extends BaseController {
     constructor(){
         super()
