@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/Wizyma/express-routes-manager.svg?branch=master)](https://travis-ci.org/Wizyma/express-routes-manager)
 [![Greenkeeper badge](https://badges.greenkeeper.io/Wizyma/express-routes-manager.svg)](https://greenkeeper.io/)
-
+[![npm version](https://badge.fury.io/js/express-routes-manager-v1.svg)](https://badge.fury.io/js/express-routes-manager-v1)
 ## What is it ?
 This will help to create express routes and keep it organized. 
 

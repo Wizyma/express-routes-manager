@@ -1,8 +1,8 @@
 {
-  "name": "express-routes-manager",
-  "version": "0.0.1",
+  "name": "express-routes-manager-v1",
+  "version": "1.0.0",
   "description": "automated routing management for express ",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "build": "tsc",
     "lint": "eslint src --ext ts",
