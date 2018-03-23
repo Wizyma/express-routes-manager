@@ -1,13 +1,14 @@
 {
   "name": "express-routes-manager-v1",
-  "version": "1.1.4",
+  "version": "1.1.3",
   "description": "automated routing management for express ",
   "main": "index.ts",
   "scripts": {
     "build": "tsc --p ./tsconfig.json && cpy package.json dist",
     "lint": "eslint src --ext ts",
     "test": "mocha -r ts-node/register __test__/**/*.test.ts",
-    "coverage": "nyc mocha -r ts-node/register __test__/**/*.test.ts"
+    "coverage": "nyc mocha -r ts-node/register __test__/**/*.test.ts",
+    "test:build": "mocha dist/__test__/**/*.test.js"
   },
   "keywords": [
     "NodeJs",
@@ -32,8 +33,10 @@
   },
   "devDependencies": {
     "@types/chai": "^4.1.2",
+    "@types/chai-http": "^3.0.4",
     "@types/mocha": "^2.2.48",
     "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
     "coveralls": "^3.0.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
