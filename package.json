@@ -42,7 +42,7 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.9.0",
     "mocha": "^5.0.4",
-    "nyc": "^11.6.0",
+    "nyc": "^13.2.0",
     "source-map-support": "^0.5.4",
     "ts-node": "^6.0.0",
     "typescript": "^2.7.2",
