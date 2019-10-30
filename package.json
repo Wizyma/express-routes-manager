@@ -43,7 +43,7 @@
     "eslint-plugin-import": "^2.9.0",
     "mocha": "^5.0.4",
     "nyc": "^11.6.0",
-    "source-map-support": "^0.5.4",
+    "source-map-support": "^0.5.16",
     "ts-node": "^6.0.0",
     "typescript": "^2.7.2",
     "typescript-eslint-parser": "^14.0.0"
