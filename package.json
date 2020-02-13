@@ -28,7 +28,7 @@
   "dependencies": {
     "@types/express": "^4.11.1",
     "@types/node": "^9.4.7",
-    "cpy-cli": "^1.0.1",
+    "cpy-cli": "^3.1.0",
     "express": "^4.16.3"
   },
   "devDependencies": {
